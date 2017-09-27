@@ -15,7 +15,7 @@ docker run -d -p 389:389 -e SLAPD_PASSWORD={mysecretpassword} -e SLAPD_DOMAIN={l
 To get the full potential this image offers, one should first create a data-only container(See "Data persistence below"), start the OpenLDAP daemon as follows:
 
 ```bash
-docker rn -d name openldap --volumes-from {your-data-container} wolfdeng/openldap
+docker run -d --name openldap --volumes-from {your-data-container} wolfdeng/openldap
 ```
 
 An application talking to OpenLDAP should then `--link` the container:
