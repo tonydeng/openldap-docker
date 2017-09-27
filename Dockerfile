@@ -13,7 +13,10 @@ EXPOSE 398
 VOLUME ["/etc/openldap-dist","/var/lib/openldap"]
 
 COPY modules/ /etc/openldap/modules
+COPY scripts/* /usr/local/bin/
 
-ENTRYPOINT ["/entrypoint.sh"]
+RUN chmod -R 755 /usr/local/bin/*
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 CMD ["slapd","-d","32789","-u","ldap","-g","ldap"]
