@@ -8,7 +8,7 @@ RUN apk update \
     && apk add openldap \
     && rm -rf /var/cache/apk/*
 
-EXPOSE 398
+EXPOSE 389
 
 VOLUME ["/etc/openldap-dist","/var/lib/openldap"]
 
