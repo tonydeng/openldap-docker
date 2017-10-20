@@ -1,8 +1,13 @@
-# openldap-docker
+# OpenLDAP Alpine Docker
+
+[![Docker Stars](https://img.shields.io/docker/stars/wolfdeng/openldap.svg)](https://hub.docker.com/r/wolfdeng/openldap/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/wolfdeng/openldap.svg)](https://hub.docker.com/r/wolfdeng/openldap/)
+[![Image Size](https://img.shields.io/imagelayers/image-size/wolfdeng/openldap/latest.svg)](https://imagelayers.io/?images=wolfdeng/openldap:latest)
+[![Image Layers](https://img.shields.io/imagelayers/layers/wolfdeng/openldap/latest.svg)](https://imagelayers.io/?images=wolfdeng/openldap:latest)
 
 The image is based on alpine.
 
-The Dockerfile inspired by dinkel/openldap
+The Dockerfile inspired by [dinkel/openldap](https://hub.docker.com/r/dinkel/openldap)
 
 ## Usage
 
