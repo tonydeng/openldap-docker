@@ -1,6 +1,6 @@
-FROM alpine
+FROM wolfdeng/alpine:latest
 
-MAINTAINER Tony Deng
+MAINTAINER Tony Deng ( wolf.deng@gmail.com )
 
 ENV OPENLDAP_VERSION 2.4.44-r0
 
